@@ -1,8 +1,8 @@
 # select python image
-FROM python:3.10
+FROM python:3.12
 
 # Add non-root user
-ARG USERNAME=vscode
+ARG USERNAME=hiro88vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
