@@ -2,12 +2,19 @@
   "name": "Python Development",
   "dockerComposeFile": "docker-compose.yml",
   "workspaceFolder": "/workspace",
-  "remoteUser": "vscode",
+  "remoteUser": "hiro88vscode",
   "service": "python3",
+  "features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+  "containerEnv": {
+    "TZ": "Asia/Tokyo"
+  },
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "editor.renderWhitespace": "all"
       },
       "extensions": [
         "ms-python.python",
@@ -16,9 +23,10 @@
         "ms-azuretools.vscode-docker",
         "mhutchie.git-graph",
         "codezombiech.gitignore",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "bradlc.vscode-tailwindcss"
       ]
     },
-    "postCreateCommand": "pip install -r requirements.txt"
+    "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh"
   }
 }
