@@ -17,7 +17,7 @@ This repository contains a Docker-based development environment for Python proje
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone <this repository url>
+    git clone <this repository url> <local new directory> 
     ```
 
 2. Navigate to the project directory:
