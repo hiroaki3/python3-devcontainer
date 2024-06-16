@@ -2,7 +2,7 @@
   "name": "Python Development",
   "dockerComposeFile": "docker-compose.yml",
   "workspaceFolder": "/workspace",
-  "remoteUser": "vscode",
+  "remoteUser": "hiro88vscode",
   "service": "python3",
   "customizations": {
     "vscode": {
